@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.boxcenter{
+    width: 70%;
+    margin: 0 auto;
+}
+.mr2{
+    margin-right: 2%;
+}
+.mt{
+    margin-top: 50px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.bgc1{
+    background-color: blueviolet;
+}
+.bgc2{
+    background-color: pink;
+}
+.mh400{
+    min-height: 400px;
+} 
+.mh50{
+    min-height: 50px;
+}
+img{
+    float: left;
+    width: 100%;
+}
+.bb{
+    border-bottom: 1px solid #ddd;
+}
+.bt{
+    border-top: 1px solid #ddd;
+}
+.bt2{
+    border-top: 2px solid #333;
+}
+.bt3{
+    border-top: 2px solid cyan;
+}
+.pf{
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+}
+.mt100{
+    margin-top: 100px;
+}
+.menu img{
+    /* float: left; */
+    width: 8%;
+    margin: 7px 100px 0 0;
+}
+a{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #3399cc;
+}
+img:hover + a{
+    color: #3399cc;
+}
+.menu a{
+    float: left;
+    margin: 16px 15px;
+    position: relative;
+}
+.search, .user{
+    float: right;
+    margin: 10px 0 10px 15px;
+}
+/* .menu a:hover{
+    color: #3399cc;
+} */
+.menu a:hover::before{
+    content: '';
+    width: 100%;
+    border-bottom: 5px solid #3399cc;
+    position: absolute;
+    bottom: -17px;
+}
+/* .menu a:hover::before:last-child{
+    content: '';
+    border-bottom: none;    
+} */
+.hotnews img{
+    /* float: left; */
+    width: 2.4%;
+    margin: 16px 10px 16px 0;
+}
+.hotnews a{
+    float: left;
+    margin: 16px 5px;
+    color: #333;
+    font-weight: normal;
+    font-size: 14px;
+    background: paleturquoise;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+.hotnews img[alt="weather"]{
+    float: right;
+    width: 3%;
+    margin: 10px 0 10px 10px;
+}
+.hotnews .weather{
+    /* width: 20%; */
+    float: right;
+    font-size: 14px;
+    padding: 20px 0;
+    font-size: 16px;
+}
+.hotnews .weather span{
+    font-weight: bold;
+}
+.hotnews a:hover{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); 
+    color: #fff;
+    background-size: 300% 300%;
+}
+.recentnews .boxleft,
+.recentnews .boxright{
+    float: left;
+    width: 24%;
+}
+.recentnews .boxmid{
+    float: left;
+    width: 48%;
+}
+.recentnews .boxleft img{
+    width: 45%;
+    float: left;
+    margin-right: 10px;
+}
+.pb{
+    padding-bottom: 13px;
+}
+.recentnews .boxleft a:hover{
+   color:#3399cc;
+}
+.pt{
+    padding-top: 13px;
+}
+/* .recentnews > .boxleft .boxleftsub img:hover + a{
+   color:#3399cc;
+} */
+.recentnews .boxmid img{
+    /* width: 100%; */
+    /* float: left; */
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+.recentnews .boxmid img + a{
+    float: left;
+    margin-bottom: 12px;
+    font-size: 35px;
+}
+.recentnews .boxmid li{
+    margin-top: 12px;
+}
+/* .recentnews .boxmid a:hover, */
+.recentnews .boxmid img:hover + a{
+   color:#3399cc;
+}
+/* .recentnews .boxright .boxrighttop img,
+.recentnews .boxright .boxrightbottom img{
+    float: left;
+    width: 100%;
+} */
+.recentnews .boxright .boxrighttop a,
+.recentnews .boxright .boxrightbottom a{
+    float: left;
+    font-size: 17px;
+    margin: 10px 0 20px 0;
+}
+/* .recentnews .boxright .boxrighttop a:hover, */
+/* .recentnews .boxright .boxrightbottom img:hover + a,
+.recentnews .boxright .boxrighttop img:hover + a{
+    color: #3399cc;
+} */
+.multi{
+    background-color: #ffde76;
+    position: relative;
+}
+.multi::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    background-color: #ffde76;
+    z-index: -1;
+}
+.gachcheo{
+    float: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 8px 8px;
+}
+.gachcheo::before{
+    content: '';
+    float: left;
+    width: 5px;
+    height: 18px;
+    background-color: red;
+    margin:3px 10px 0 0;
+    transform: skewX(-20deg);
+}
+.multi .title a{
+    float: left;
+    font-size: 16px;
+    margin: 10px 30px 0 30px ;
+}
+.multi .title a:hover{
+    color: #DD3333;
+}
+.multi .content{
+    margin-top: 10px;
+}
+.multi .content .contentleft{
+    float: left;
+    width: 48%;
+}
+.multi .content .contentmid,
+.multi .content .contentright{
+    float: left;
+    width: 24%;
+}
+.multi .content .contentleft img{
+    /* float: left;
+    width: 100%; */
+    height: 300px;
+    object-fit: cover;
+}
+.multi .content .contentleft a{
+    float: left;
+    font-size: 28px;
+    margin: 10px 0;
+}
+.contentmid .contentmidSub img{
+    /* float: left;
+    width: 100%; */
+    height: 160px;
+    object-fit: cover;
+}
+.contentmid .contentmidSub a{
+    float: left;
+    font-size: 16px;
+    margin: 5px 0 15px 0;
+}
+.contentright .contentrightSub img{
+    height: 160px;
+    object-fit: cover;
+}
+.contentright .contentrightSub a{
+    float: left;
+    font-size: 16px;
+    margin: 5px 0 15px 0;
+}
+/* .books .bookscontent{
+    padding-right: 1px;
+} */
+.books .bookscontent .bookscontentsub{
+    float: left;
+    width: calc(18.4% - 2px);
+    height: 230px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+.books .bookscontent .bookscontentsub img{
+    height: 150px;
+    object-fit: cover;
+    margin:1px 1px 0 0;
+    width: calc(100% - 1px);
+}
+.books .bookscontent .bookscontentsub a{
+    float: left;
+    margin: 10px 10px 30px 10px;
+}
+.article .articleleft{
+    width: 70%;
+    float: left;
+}
+.article .articleleft .articleleftsub img{
+    width: 35%;
+    height: 170px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.article .articleleft .articleleftsub a{
+    /* float: left; */
+    font-size: 20px;
+    margin-bottom: 10px;
+    /* text-align: left; */
+}
+.article .articleleft .articleleftsub p{
+    font-family: sans-serif;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.4;
+}
+.article .articleright{
+    width: 30%;
+    float: right;
+}
+.article .articleright .articlerightsub img{
+    width:90%;
+    float: right;
+}
+.articlerightsub .mostread{
+    margin-top: 20px;
+    width: 90%;
+    height: 570px;
+    float: right;
+    border: 1px solid #f0f0f0;
+}
+.articlerightsub .mostread a{
+    float: left;
+    font-size: 20px;
+    margin: 20px 0 20px 20px;
+}
+.articlerightsub .mostread .mostreadsub{
+    float: left;
+    width: 100%;
+
+}
+.articlerightsub .mostread .mostreadsub img{
+    float: left;
+    width: 26%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 0 0 0 20px;
+}
+.articlerightsub .mostread .mostreadsub img + a{
+    /* float: left; */
+    font-size: 10px;
+    /* line-height: 11px; */
+    color: #5c5c5c;
+    padding-bottom: 10px;
+}
+.articlerightsub .mostread .mostreadsub a{
+    /* float: left; */
+    font-size: 15px;
+}
+.articleright .articlerightsubLast{
+    position: relative;
+}
+.articleright .articlerightsubLast .podcast{
+    width: 90%;
+    float: right;
+    position: absolute;
+    top: 30px;
+    right:0;
+}
+.lifestyle .lifestyleleft{
+    float: left;
+    width: 44%;
+}
+.lifestyle .lifestylemid,
+.lifestyle .lifestyleright{
+    float: left;
+    width: calc(26% - 0.5px);
+}
+.lifestyle .lifestyleleft a{
+    margin: 14px 0;
+    float: left;
+    font-size: 22px;
+    
+}
+.lifestyle .titlelifestyle{
+    padding-bottom: 5px;
+}
+.lifestylecontent .lifestyleleft p{
+    float: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.lifestylecontent .lifestylemid .lifestylemidsub{
+    width: 90%;
+}
+.lifestylecontent .lifestylemid .lifestylemidsub a{
+    float: left;
+    margin: 15px 0 25px 0;
+    font-size: 17px;
+}
+.lifestylecontent .lifestylemid .lifestylemidsub img{
+    height: 170px;
+    object-fit: cover;
+}
+.br{
+    border-right:1px solid #ddd;
+}
+.lifestyleright .lifestylerightsub img{
+    float: right;
+    width: 28%;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.section .sectionleft,
+.section .sectionmid1,
+.section .sectionmid2,
+.section .sectionright{
+    float: left;
+    width: 23.5%;
+}
+
+.section .sectioncontent1 a{
+    float: left;
+    font-size: 17px;
+    margin: 10px 0 30px 0;
+}
+.section .sectioncontent2sub{
+    padding: 15px 0;
+}
+.section .sectioncontent2 a{
+    font-size: 14px;
+}
+.section .sectioncontent1 img{
+    height: 160px;
+    object-fit: cover;
+}
+.section .sectioncontent2 img{
+    width: 40%;
+    height: 70px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.magazine{
+    position: relative;
+}
+.magazine::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    bottom: -50px;
+    left: -230px;
+    right: -230px;
+    background: #eee;
+    z-index: -1;
+}
+.magazine .magazinecontent .magazinesub{
+    width: 23.5%;
+    float: left;
+}
+.magazinecontent .magazinesub{
+    position: relative;
+}
+.magazinecontent .magazinesub::before{
+    content: '';
+    width: 50px;
+    height: 6px;
+    background-color: #ffde76;
+    position: absolute;
+    top:calc(50% - 3px);
+    left: calc(50% - 25px);
+}
+.magazinecontent .magazinesub img{
+    height: 400px;
+    object-fit: cover;
+}
+.magazinecontent .magazinesub div{
+    width: 90px;
+    height: 18px;
+    line-height:18px;
+    padding: 5px 10px 5px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    left: calc(50% - 45px);
+    background-color: #ffde76;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.magazinecontent .magazinesub a{
+    display: block;
+    font-family:'Noto Serif';
+    font-size: 22px;
+    /* font-weight: bold; */
+    color: #fff;
+    position: absolute;
+    top: 210px;
+    padding: 0 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+video{
+    height: 250%;
+    width: 250%;
+    object-fit: contain;
+    position: bottom;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.inforight{
+    float: right;
+    line-height: 1.6;
+}
+.infoleft{
+    float: left;
+    line-height: 1.6;
+}
+footer {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    color: #888;
+    font-size: 12px;
+    background: #f7f7f7;
+}
+.info{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    object-fit: cover;
+}
